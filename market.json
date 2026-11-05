@@ -11,57 +11,93 @@
   "metadata": {
     "categories": {
       "essential": {
-        "title": { "en": "Essentials", "zh": "装机必备" }
+        "title": {
+          "en": "Essentials",
+          "zh": "装机必备"
+        }
       },
       "tools": {
-        "title": { "en": "Internal tools", "zh": "内部工具" }
+        "title": {
+          "en": "Internal tools",
+          "zh": "内部工具"
+        }
       }
     },
     "labels": {
       "recommended": {
-        "title": { "en": "Recommended", "zh": "推荐" }
+        "title": {
+          "en": "Recommended",
+          "zh": "推荐"
+        }
       }
     }
   },
   "plugins": [
     {
       "name": "dsh-context",
-      "title": { "en": "Context", "zh": "上下文" },
+      "title": {
+        "en": "Context",
+        "zh": "上下文"
+      },
       "description": {
         "en": "See what fills the context window and where the tokens go, turn by turn.",
         "zh": "看清上下文由什么组成、token 花在哪儿，随时翻看每一轮的变化。"
       },
       "author": "bowenliang123",
       "homepage": "https://github.com/bowenliang123/dsh-context#readme",
-      "repository": { "url": "https://github.com/bowenliang123/dsh-context" },
+      "repository": {
+        "url": "https://github.com/bowenliang123/dsh-context"
+      },
       "metadata": {
         "category": "essential",
-        "labels": ["recommended"],
-        "keywords": ["context", "tokens", "inspect"]
+        "labels": [
+          "recommended"
+        ],
+        "keywords": [
+          "context",
+          "tokens",
+          "inspect"
+        ]
       },
       "versions": [
         {
           "version": "0.81.2",
           "publishTimestamp": 1793820795,
-          "source": { "type": "npm" },
-          "engines": { "dsh": ">=0.2.0-rc.2 || >=0.2.1-rc.2 || >=0.2.2-rc.1" }
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-rc.2 || >=0.2.1-rc.2 || >=0.2.2-rc.1"
+          }
         }
       ]
     },
     {
       "name": "@local/dsh-trace",
-      "title": { "en": "Trace", "zh": "请求追踪" },
+      "title": {
+        "en": "Trace",
+        "zh": "请求追踪"
+      },
       "description": {
         "en": "Keeps every request, response, timing and retry as evidence, so incidents don't turn into guesswork.",
         "zh": "把每次请求、响应、耗时和重试都留成证据，出问题时不用靠猜。"
       },
       "author": "CherryLover",
       "homepage": "https://github.com/CherryLover/dsh-trace#readme",
-      "repository": { "url": "https://github.com/CherryLover/dsh-trace" },
+      "repository": {
+        "url": "https://github.com/CherryLover/dsh-trace"
+      },
       "metadata": {
         "category": "essential",
-        "labels": ["recommended"],
-        "keywords": ["trace", "requests", "latency", "debug"]
+        "labels": [
+          "recommended"
+        ],
+        "keywords": [
+          "trace",
+          "requests",
+          "latency",
+          "debug"
+        ]
       },
       "versions": [
         {
@@ -71,6 +107,48 @@
             "type": "git",
             "url": "https://github.com/CherryLover/dsh-trace",
             "commit": "6d45f9cef58db1c197e65001332c2913d807ae51"
+          }
+        }
+      ]
+    },
+    {
+      "name": "@xthings/dsh-brand",
+      "title": {
+        "en": "Xthings brand",
+        "zh": "Xthings 品牌"
+      },
+      "description": {
+        "en": "Xthings startup animation, the Powered by Xthings byline, and the first-run connection setup.",
+        "zh": "启动时播放 Xthings 动画，品牌下方加一行 Powered by Xthings，并在首次启动时完成连接配置。"
+      },
+      "author": "CherryLover",
+      "homepage": "https://github.com/CherryLover/xthings-dsh-brand#readme",
+      "repository": {
+        "url": "https://github.com/CherryLover/xthings-dsh-brand"
+      },
+      "metadata": {
+        "category": "essential",
+        "labels": [
+          "recommended"
+        ],
+        "keywords": [
+          "brand",
+          "splash",
+          "onboarding",
+          "xthings"
+        ]
+      },
+      "versions": [
+        {
+          "version": "1.0.0",
+          "publishTimestamp": 1793847680,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/CherryLover/xthings-dsh-brand",
+            "commit": "7cd4a2b56abafacf816079e773b859518f3030a9"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.2"
           }
         }
       ]
