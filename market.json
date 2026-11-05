@@ -145,7 +145,7 @@
           "source": {
             "type": "git",
             "url": "https://github.com/CherryLover/xthings-dsh-brand",
-            "commit": "604e991ba6d2d5609c07d206406e465d36912b6a"
+            "commit": "482a4982d5ae279c6af1b8604c960b5cfb95648a"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.2"

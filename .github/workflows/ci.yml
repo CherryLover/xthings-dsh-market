@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: 校验索引
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      # 索引写坏了所有人都装不上，所以这里既查形状也查"指向的东西真的存在"
+      - name: 校验 market.json
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/ci-check.mjs
+
+      - name: JSON 格式（2 空格缩进、结尾换行）
+        run: |
+          node -e '
+            const fs = require("node:fs")
+            const raw = fs.readFileSync("market.json", "utf8")
+            const pretty = JSON.stringify(JSON.parse(raw), null, 2) + "\n"
+            if (raw !== pretty) { console.error("market.json 不是 2 空格缩进 + 结尾换行的规范格式，重新排版后再提交"); process.exit(1) }
+            console.log("格式规范")
+          '
