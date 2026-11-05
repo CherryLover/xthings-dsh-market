@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Xthings DSH Plugins",
+    "zh": "Xthings 插件源"
+  },
+  "description": {
+    "en": "Plugins the Xthings team ships and supports on DeepSeek Harness: the ones every machine needs, plus the internal tools we keep adding.",
+    "zh": "Xthings 团队在 DeepSeek Harness 上维护的插件：每台机器都该装的必备项，以及后续陆续加进来的内部工具。"
+  },
+  "metadata": {
+    "categories": {
+      "essential": {
+        "title": { "en": "Essentials", "zh": "装机必备" }
+      },
+      "tools": {
+        "title": { "en": "Internal tools", "zh": "内部工具" }
+      }
+    },
+    "labels": {
+      "recommended": {
+        "title": { "en": "Recommended", "zh": "推荐" }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-context",
+      "title": { "en": "Context", "zh": "上下文" },
+      "description": {
+        "en": "See what fills the context window and where the tokens go, turn by turn.",
+        "zh": "看清上下文由什么组成、token 花在哪儿，随时翻看每一轮的变化。"
+      },
+      "author": "bowenliang123",
+      "homepage": "https://github.com/bowenliang123/dsh-context#readme",
+      "repository": { "url": "https://github.com/bowenliang123/dsh-context" },
+      "metadata": {
+        "category": "essential",
+        "labels": ["recommended"],
+        "keywords": ["context", "tokens", "inspect"]
+      },
+      "versions": [
+        {
+          "version": "0.81.2",
+          "publishTimestamp": 1793820795,
+          "source": { "type": "npm" },
+          "engines": { "dsh": ">=0.2.0-rc.2 || >=0.2.1-rc.2 || >=0.2.2-rc.1" }
+        }
+      ]
+    },
+    {
+      "name": "@local/dsh-trace",
+      "title": { "en": "Trace", "zh": "请求追踪" },
+      "description": {
+        "en": "Keeps every request, response, timing and retry as evidence, so incidents don't turn into guesswork.",
+        "zh": "把每次请求、响应、耗时和重试都留成证据，出问题时不用靠猜。"
+      },
+      "author": "CherryLover",
+      "homepage": "https://github.com/CherryLover/dsh-trace#readme",
+      "repository": { "url": "https://github.com/CherryLover/dsh-trace" },
+      "metadata": {
+        "category": "essential",
+        "labels": ["recommended"],
+        "keywords": ["trace", "requests", "latency", "debug"]
+      },
+      "versions": [
+        {
+          "version": "0.5.3",
+          "publishTimestamp": 1793786644,
+          "source": {
+            "type": "git",
+            "url": "https://github.com/CherryLover/dsh-trace",
+            "commit": "6d45f9cef58db1c197e65001332c2913d807ae51"
+          }
+        }
+      ]
+    }
+  ]
+}
