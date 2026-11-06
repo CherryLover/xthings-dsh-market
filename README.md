@@ -11,6 +11,23 @@ https://cherrylover.github.io/xthings-dsh-market/market.json
 
 把这个地址填进 DSH 的插件市场配置即可。不要用 `raw.githubusercontent.com` 的地址。
 
+## 设计与创作插件
+
+市场收录了 [Jim Liu 宝玉的 baoyu-design DSH 插件](https://github.com/JimLiu/baoyu-design/tree/main/dsh-plugins)，归入「设计与创作」分类：
+
+| 插件 | npm 包名 | 收录版本 |
+| --- | --- | --- |
+| Claude 作品（共用基础插件） | `dsh-claude-artifacts` | 2.11.1 |
+| Claude 数据看板 | `dsh-claude-dashboard` | 2.11.1 |
+| Claude 设计稿 | `dsh-claude-design` | 2.11.1 |
+| Claude 设计系统 | `dsh-claude-design-system` | 2.11.1 |
+| Claude 动画 | `dsh-claude-motion` | 2.11.1 |
+| Claude 幻灯片 | `dsh-claude-slides` | 2.11.1 |
+
+这些条目的作者、图标、说明、版本与兼容范围来自[上游官方市场索引](https://jimliu.github.io/baoyu-design/dsh-plugins/index.json)，安装来源为 npm。当前是审核后的版本快照，不会自动同步上游新版本；更新时应重新检查官方索引和 npm 发布信息。
+
+插件仍由使用者自行点击安装；五个创作插件会自动依赖共用的 `dsh-claude-artifacts`，不必先单独安装它。按上游说明，安装并启用后需要完整退出并重新打开 DSH，侧栏才会出现「作品」入口；使用新技能应新开会话。
+
 ## 改完先自检
 
 ```bash
