@@ -140,12 +140,12 @@
       },
       "versions": [
         {
-          "version": "1.0.4",
-          "publishTimestamp": 1793871282,
+          "version": "1.0.5",
+          "publishTimestamp": 1793941987,
           "source": {
             "type": "git",
             "url": "https://github.com/CherryLover/xthings-dsh-brand",
-            "commit": "a3d699e45e2de9ca531bcdcbbc795af0618f9328"
+            "commit": "adc8fbaef860bca8d51dcd78f6ab7688b12008c8"
           },
           "engines": {
             "dsh": ">=0.2.1-rc.2"
